@@ -1,0 +1,24 @@
+.copyright {
+    width: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__link {
+        cursor: pointer;
+        height: 35px;
+        
+        
+        &:hover path,
+        &:focus path {
+            fill: $main-color__hover;
+            transition: 0.5s;
+        }
+
+        &:active path {
+            fill: #000000;
+            opacity: 0.3;
+            transition: none;
+        }
+    }
+}

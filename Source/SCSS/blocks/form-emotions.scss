@@ -1,0 +1,42 @@
+.form-emotions {
+    border: none;
+    padding: 0;
+    padding-top: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    &__input {
+        width: 100%;
+        max-width: 650px;
+        height: 160px;
+        resize: none;
+        border: none;
+        background-color: $background-input;
+        padding: 20px;
+
+        @include font-bold-mobile;
+        text-transform: initial;
+
+        &:hover {
+            background-color: $background-input-hover;
+            transition: 0.5s;
+        }
+
+        &:focus {
+            background-color: $background-input-hover;
+            outline: 2px solid $main-color;
+            transition: 0.5s;
+        }
+
+        @media (min-width: $tablet-width) {
+            max-width: none;
+        }
+    }
+}

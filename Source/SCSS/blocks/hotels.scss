@@ -1,0 +1,145 @@
+.hotels {
+    &__item {
+        padding: 30px 60px;
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1px solid $third-color;
+
+        @media (max-width: $desktop-width - 1px) {
+            padding: 30px 40px;
+        }
+
+        @media (max-width: $mobile-width) {
+            padding: 30px 20px;
+        }
+
+        @media (max-width: 577px) {
+            justify-content: space-between;
+        }
+    }
+
+    &__picture {
+        width: 135px;
+        height: 90px;
+
+        @media (max-width: 577px) {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__img {
+        width: 135px;
+        height: 90px;
+
+        @media (max-width: 577px) {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__info {
+        margin: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media (max-width: $mobile-width) {
+            margin: 0 30px;
+        }
+
+        @media (max-width: 577px) {
+            margin: 0;
+            margin-top: 20px;
+        }
+    }
+
+    &__title {
+        @include font-bold-main;
+        line-height: 21px;
+        margin: 0;
+    }
+
+    &__description {
+        margin: 0;
+        width: 180px;
+        display: flex;
+        justify-content: space-between
+    }
+
+    &__about-button {
+        @include font-regular-main;
+        font-weight: 700;
+        color: $second-text-color;
+        width: auto;
+        padding: 5px 15px;
+    }
+
+    &__reserve-button {
+        @include font-regular-main;
+        font-weight: 700;
+        color: $second-text-color;
+        border: none;
+        width: auto;
+        padding: 5px 15px;
+        background-color: #766357;
+        margin-left: 6px;
+        transition: 0.5s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #604e43;
+        }
+
+        &:active {
+            background-color: #503e33;
+            color: rgba($color: $second-text-color, $alpha: 0.3);
+            transition: none;
+        }
+    }
+
+    &__rating-inner {
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        @media (max-width: 577px) {
+            margin: 0;
+            margin-top: 20px;
+            align-items: center;
+        }
+    }
+
+    &__stars {
+        height: 22px;
+        background-image: url("../img/SVG/star.svg");
+        background-repeat: repeat-x;
+
+        &--four {
+            width: 95px;
+        }
+
+        &--four {
+            width: 76px;
+        }
+
+        &--three {
+            width: 57px;
+        }
+
+        &--two {
+            width: 37px;
+        }
+
+        &--one {
+            width: 20px;
+        }
+    }
+
+    &__rating {
+        margin: 0;
+    }
+
+}

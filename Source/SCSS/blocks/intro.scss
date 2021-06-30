@@ -1,0 +1,81 @@
+.intro {
+    &__logotype {
+        background-color: $main-color;
+        background-image: url('../img/SVG/intro-triangle.svg'),
+            url('../img/img/bg-back-desktop@1x.jpg');
+        background-position: center bottom, center;
+        background-repeat: no-repeat;
+        background-size: auto, cover;
+        padding: 90px 0;
+
+        @media (min-resolution: 2dppx) {
+            background-image: url('../img/SVG/intro-triangle.svg'),
+                url("../img/img/bg-back-desktop@2x.jpg");
+        }
+
+        @media (max-width: $mobile-width) {
+            padding-top: 80px;
+            background-image: url('../img/SVG/intro-triangle.svg'),
+                url('../img/img/bg-back-mobile@1x.jpg');
+
+            @media (min-resolution: 2dppx) {
+                background-image: url('../img/SVG/intro-triangle.svg'),
+                    url("../img/img/bg-back-mobile@2x.jpg");
+            }
+        }
+
+        &--variant2 {
+            padding: 55px 0 68px;
+            background-position: center bottom;
+            background-size: auto, cover;
+
+            @media (min-width: $tablet-width) {
+                padding: 100px 0 120px;
+            }
+        }
+    }
+
+    &__image {
+        width: 460px;
+
+        margin: 0 auto;
+        display: block;
+
+        @media (max-width: $mobile-width) {
+            width: 280px;
+        }
+    }
+
+    &__title {
+        margin: 40px auto 30px;
+        max-width: 520px;
+        text-align: center;
+
+        @include font-bold-main;
+
+        @media (max-width: $mobile-width) {
+            padding: 0 30px;
+            @include font-bold-mobile;
+        }
+    }
+
+    &__text {
+        max-width: 520px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 50px;
+        @include font-regular-main;
+
+        @media (max-width: $mobile-width) {
+            padding: 0 30px;
+        }
+    }
+
+    &--feedback {
+        border-bottom: 1px solid #e5e5e5;
+
+        @media (min-width: $tablet-width) {
+            border: none;
+        }
+    }
+}

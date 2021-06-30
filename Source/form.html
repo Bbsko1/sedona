@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма отзыва</title>
+    <link rel="stylesheet" href="CSS/style.min.css">
+</head>
+<body class="page__body container">
+    <header class="main-header">
+        <nav class="main-nav">
+            <button class="main-nav__button main-nav__button--closed main-nav__button--no-js"><span
+                    class="visually-hidden">Открыть меню</span></button>
+            <ul class="main-nav__list site-list site-list--closed">
+                <li class="site-list__item">
+                    <a class="site-list__link" href="index.html">Главная</a>
+                </li>
+                <li class="site-list__item">
+                    <a class="site-list__link" href="photo.html">Фото и видео</a>
+                </li>
+                <li class="site-list__item">
+                    <a class="site-list__link site-list__link--active">Форма отзыва</a>
+                </li>
+                <li class="site-list__item">
+                    <a class="site-list__link" href="hotels.html">Гостиницы</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="main-header__logo main-logo">
+            <a class="main-logo__link" href="index.html">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="img/SVG/logo-sedona-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/SVG/logo-sedona-tablet.svg">
+                    <img src="img/SVG/logo-sedona-mobile.svg" width="186" height="96" alt="logo">
+                </picture>
+            </a>
+        </div>
+    </header>
+    <main class="page-main">
+        <section class="intro intro--feedback">
+            <div class="intro__logotype intro__logotype--variant2">
+                <img class="intro__image" src="img/SVG/text-sedona.svg" alt="Логотип">
+            </div>
+            <h3 class="intro__title">Оставьте свой отзыв</h3>
+            <p class="intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </section>
+        <section class="page__form">
+            <form class="form-feedback" action="#">
+                <fieldset class="form-feedback__person form-person">
+                    <legend class="form-person__title form-feedback__title">Представьтесь:</legend>
+                    <label class="form-person__label">
+                        <span class="form-person__text">Имя*:</span>
+                        <input class="form-person__input" type="text" name="name" placeholder="Петр" required>
+                    </label>
+                    <label class="form-person__label">
+                        <span class="form-person__text">Фамилия*:</span>
+                        <input class="form-person__input" type="text" name="surname" placeholder="Иванов" required>
+                    </label>
+                    <label class="form-person__label">
+                        <span class="form-person__text">Отчество:</span>
+                        <input class="form-person__input" type="text" name="patronymic" placeholder="Александрович">
+                    </label>
+                </fieldset>
+                <fieldset class="form-feedback__contacts form-contacts">
+                    <legend class="form-feedback__title form-contacts__title">Контактная информация:</legend>
+                    <label class="form-contacts__label form-contacts__label--phone">
+                        <span class="form-contacts__text"><span class="form-contacts__hidden">Контактный </span>телефон*:</span>
+                        <input class="form-contacts__input" type="tel" name="tel" placeholder="Введите телефон" required>
+                    </label>
+                    <label class="form-contacts__label form-contacts__label--email">
+                        <span class="form-contacts__text">Электронная почта*:</span>
+                        <input class="form-contacts__input" type="email" name="email" placeholder="Введите e-mail" required>
+                    </label>
+                </fieldset>
+                <fieldset class="form-feedback__impressions form-impressions">
+                    <legend class="form-feedback__title form-impressions__title">Ваше Общее впечатление:</legend>
+                    <label class="form-impressions__label">
+                        <input class="form-impressions__input visually-hidden" type="radio" name="impression" value="positive" checked>
+                        <span class="form-impressions__radiobutton"></span>
+                        <span class="form-impressions__text">Скорее положительное</span>
+                    </label>
+                    <label class="form-impressions__label">
+                        <input class="form-impressions__input visually-hidden" type="radio" name="impression" value="negative">
+                        <span class="form-impressions__radiobutton"></span>
+                        <span class="form-impressions__text">Скорее отрицательное</span>
+                    </label>
+                    <label class="form-impressions__label">
+                        <input class="form-impressions__input visually-hidden" type="radio" name="impression" value="neutral">
+                        <span class="form-impressions__radiobutton"></span>
+                        <span class="form-impressions__text">Затрудняюсь ответить</span>
+                    </label>
+                </fieldset>
+                <fieldset class="form-feedback__attractions form-attractions">
+                    <legend class="form-feedback__title form-attractions__title">
+                        Посещенные<br>
+                        достопримечательности:
+                        </legend>
+                    <label class="form-attractions__label">
+                        <input class="form-attractions__input visually-hidden" type="checkbox" name="devil-bridge" checked>
+                        <span class="form-attractions__checkbox"></span>
+                        <span class="form-attractions__text">Мост Дьявола</span>
+                    </label>
+                    <label class="form-attractions__label">
+                        <input class="form-attractions__input visually-hidden" type="checkbox" name="bell-rock" checked>
+                        <span class="form-attractions__checkbox"></span>
+                        <span class="form-attractions__text">Гора Колокол</span>
+                    </label>
+                    <label class="form-attractions__label">
+                        <input class="form-attractions__input visually-hidden" type="checkbox" name="slide-park">
+                        <span class="form-attractions__checkbox"></span>
+                        <span class="form-attractions__text">Слайд-парк</span>
+                    </label>
+                    <label class="form-attractions__label">
+                        <input class="form-attractions__input visually-hidden" type="checkbox" name="red-rock">
+                        <span class="form-attractions__checkbox"></span>
+                        <span class="form-attractions__text">Красные скалы</span>
+                    </label>
+                </fieldset>
+                <fieldset class="form-feedback__emotions form-emotions">
+                    <legend class="form-feedback__title form-emotions__title">Опишите свои эмоции:</legend>
+                    <textarea class="form-emotions__input" placeholder="Опишите подробно все свои восторги" name="emotions"></textarea>
+                </fieldset>
+                <div class="form-feedback__button">
+                    <button class="button">Отправить отзыв</button>
+                </div>
+                <span class="form-feedback__required-fields">* — обязательные поля</span>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__contacts">#VisitSedona</p>
+        <div class="footer__social social">
+            <a class="social__link" href="#">
+                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11.3 0.166728C13 -0.333272 14.4 0.366728 15 1.26673C15.7 1.06673 16.4 0.766728 17.1 0.566728C17.1 1.36673 16.6 2.06673 16.2 2.26673C16.9 2.46673 17.5 1.76673 17.5 1.76673C17.3 2.76673 16.5 3.46673 15.9 3.76673C15.7 10.3667 12.6 14.7667 5.5 14.5667C5 14.5667 5.6 14.5667 5 14.5667C4.6 14.5667 0.7 14.1667 0 12.7667C2.3 12.9667 4 12.3667 4.8 11.6667C3.8 11.3667 2 11.1667 1.7 8.76673C2.1 8.86673 2.3 8.96673 3 8.86673C1.8 8.06673 0.4 7.36673 0.5 5.16673C0.8 5.46673 1.6 5.66673 1.9 5.66673C1.2 5.46673 -0.1 2.36673 1 0.866728C2.9 2.66673 4.8 4.36673 8.4 4.56673C8.5 2.26673 9.5 0.766728 11.3 0.166728Z"
+                        fill="white" />
+                </svg>
+            </a>
+            <a class="social__link" href="#">
+                <svg width="9" height="19" viewBox="0 0 9 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6.3 3.4C7.1 3.4 7.9 3.4 8.7 3.4C8.7 2.3 8.7 1.2 8.7 0C7.7 0 6.8 0 5.8 0C2.7 0.2 1.5 2.4 1.9 6.1H0V9.6H2C2 12.7 2 15.8 2 18.9C3.3 18.9 4.6 18.9 5.8 18.9C5.8 15.8 5.8 12.7 5.8 9.6H8.7V6.1H5.8C5.8 5.1 5.8 3.7 6.3 3.4Z"
+                        fill="white" />
+                </svg>
+
+            </a>
+            <a class="social__link" href="#">
+                <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.1 0H2.8C1.3 0 0 1.3 0 2.8V11.1C0 12.7 1.3 14 2.8 14H17.1C18.7 14 19.9 12.7 19.9 11.2V2.8C20 1.3 18.7 0 17.1 0ZM7 10.4V3.6L13.8 7L7 10.4Z"
+                        fill="white" />
+                </svg>
+            </a>
+        </div>
+        <div class="footer__copyright copyright">
+            <p class="copyright__text">Разработано</p>
+            <a class="copyright__link" href="#">
+                <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+                        fill="black" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+    <script src="JS/main.min.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,71 @@
+// viewports
+
+$desktop-width: 1200px;
+$tablet-width: 768px;
+$mobile-width: 767px;
+
+// colors
+
+$main-color: #81B3D2;
+$main-color__active: #5496BD;
+$main-color__hover: #669EC0;
+$second-color: #ffffff;
+$third-color: #eeeeee;
+$main-text-color: #000000;
+$second-text-color: #ffffff;
+$active-page-color: #766357;
+$background-input: #f2f2f2;
+$background-input-hover: #e5e5e5;
+
+// mixins
+@mixin font-mobile-menu {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: $second-text-color;
+}
+
+@mixin font-main-menu {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: $main-text-color;
+}
+
+@mixin font-regular-main {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: $main-text-color;
+}
+
+@mixin font-bold-mobile {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+@mixin font-bold-main {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+@mixin font-bold-title {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+

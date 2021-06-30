@@ -1,0 +1,135 @@
+.benefits-list {
+    &__title {
+        margin-top: 25px;
+        @include font-bold-mobile;
+    }
+
+    &__number {
+        margin: 0;
+        
+    }
+
+    &__text {
+        margin-bottom: 25px;
+        
+
+        @media (min-width: $tablet-width) {
+            max-width: 275px;
+        }
+    }
+
+    &__inner {
+        text-align: left;
+        margin-left: 10px;
+        margin-right: 20px;
+
+        @media (min-width: $tablet-width) {
+            text-align: center;
+            margin: 0;
+        }
+    }
+
+    @media (min-width: $tablet-width) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 256px 330px repeat(2, 256px);
+    }
+
+    &__icon {
+        width: 42px;
+        margin-top: 10px;
+
+        @media (min-width: $tablet-width) {
+            width: 76px;
+            height: 75px;
+        }
+    }
+}
+
+.benefits-list__item {
+    text-align: center;
+    padding: 0 20px;
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (max-width: $mobile-width) {
+        margin: 0 auto;
+
+        &--main-color:first-child {
+            background-image: url('../../img/SVG/background img mobile.svg');
+            background-position: center 0;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &--main-color {
+        padding: 40px 20px;
+        background-color: $main-color;
+        color: $second-text-color;
+
+        @media (min-width: $tablet-width) {
+
+        }
+    }
+
+    &--second-color {
+        display: flex;
+        align-items: flex-start;
+        min-width: 280px;
+        max-width: 550px;
+        margin: 25px auto;
+
+        @media (min-width: $tablet-width) {
+            min-width: auto;
+            justify-content: start;
+            align-items: center;
+            padding-top: 60px;
+            margin: 0;
+        }
+    }
+
+    &--third-color {
+        background-color: $third-color;
+        display: flex;
+        flex-direction: column;
+
+        & .benefits-list__text {
+            padding-bottom: 25px;
+            margin-bottom: 0;
+            border-bottom: 1px solid #d6d6d6;
+
+            @media (min-width: $tablet-width) {
+                border: none;
+                max-width: 275px;
+            }
+        }
+    }
+
+    &--photo {
+        padding: 0;
+        height: 256px;
+
+        & picture, img {
+            width: 100%;
+            height: 256px;
+            object-fit: cover;
+        }
+
+        @media (min-width: $tablet-width) {
+            grid-column: 2/4;
+        }
+    }
+
+}
+
+@media (min-width: $tablet-width) {
+    .benefits-list__item--second-color ~ .benefits-list__item--photo {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+}

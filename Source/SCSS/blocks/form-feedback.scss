@@ -1,0 +1,98 @@
+.form-feedback {
+    @media (min-width: $tablet-width) {
+        padding: 0 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding: 0 120px;
+    }
+
+    &__person {
+        padding: 20px;
+        border-bottom: 1px solid #e5e5e5;
+
+        @media (min-width: $tablet-width) {
+            padding: 40px 0 0;
+            padding-left: 55px;
+            border: none;
+            border-left: 1px solid #e5e5e5;
+            width: 50%;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__contacts {
+        padding: 20px;
+        border-bottom: 1px solid #e5e5e5;
+
+        @media (min-width: $tablet-width) {
+            padding: 40px 0;
+            border: none;
+            width: 100%;
+        }
+    }
+
+    &__impressions {
+        padding: 20px;
+        border-bottom: 1px solid #e5e5e5;
+
+        @media (min-width: $tablet-width) {
+            padding: 40px 0 0;
+            border: none;
+            order: -1;
+            width: 50%;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__attractions {
+        padding: 20px;
+        border-bottom: 1px solid #e5e5e5;
+
+        @media (min-width: $tablet-width) {
+            padding: 40px 0;
+            border: none;
+        }
+    }
+
+    &__emotions {
+        padding: 20px;
+
+        @media (min-width: $tablet-width) {
+            padding: 40px 0;
+            border: none;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__title {
+        @include font-bold-mobile;
+    }
+
+    &__button {
+        padding: 20px;
+        max-width: 690px;
+        margin: 0 auto;
+        
+        @media (min-width: $tablet-width) {
+            width: 50%;
+            padding: 0;
+        }
+    }
+
+    &__required-fields {
+        display: none;
+
+        @media (min-width: $tablet-width) {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 50%;
+        }
+    }
+}

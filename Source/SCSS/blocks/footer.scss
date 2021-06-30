@@ -1,0 +1,32 @@
+.footer {
+    padding: 38px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: $tablet-width) {
+        flex-direction: row;
+        padding: 38px 45px;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding: 38px 110px;
+    }
+
+    &__contacts {
+        @include font-bold-main;
+        margin-top: 0;
+
+        @media (min-width: $tablet-width) {
+            margin: 0;
+        }
+    }
+
+    &__social {
+        margin-bottom: 30px;
+        @media (min-width: $tablet-width) {
+            margin: 0;
+        }
+    }
+}

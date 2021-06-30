@@ -1,0 +1,27 @@
+.search-hotel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px 50px;
+
+    &__title {
+        margin-top: 0;
+        @include font-bold-main;
+        
+        @media (min-width: $tablet-width) {
+            margin-top: 28px;
+            @include font-bold-title;
+        }
+    }
+
+    &__text {
+        max-width: 435px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+
+    &__button {
+        max-width: 458px;
+    }
+}

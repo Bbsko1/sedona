@@ -1,0 +1,34 @@
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    width: 162px;
+    
+
+    &__link {
+        background-color: $main-color;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        cursor: pointer;
+        transition: 0.5s;
+        margin-bottom: 6px;
+        margin-right: 6px;
+
+        &:hover, 
+        &:focus {
+            background-color: $main-color__hover;
+            transition: 0.5s;
+        }
+
+        &:active {
+            background-color: $main-color__active;
+        }
+
+        
+        &:active path {
+            opacity: 0.3;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.button {
+    @include font-bold-main;
+
+    color: $second-text-color;
+    width: 100%;
+    text-align: center;
+    background-color: $main-color;
+    border: none;
+    line-height: 58px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover,
+    &:focus {
+        background-color: $main-color__hover;
+    }
+
+    &:active {
+        background-color: $main-color__active;
+        color: rgba($color: $second-text-color, $alpha: 0.3);
+        transition: none;
+    }
+}

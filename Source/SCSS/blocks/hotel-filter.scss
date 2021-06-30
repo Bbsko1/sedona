@@ -1,0 +1,111 @@
+.hotel-filter {
+    display: flex;
+    align-items: center;
+    padding: 30px 60px;
+    border-bottom: 1px solid $third-color;
+
+    @media (max-width: $desktop-width - 1px) {
+        padding: 30px 40px;
+    }
+
+    @media (max-width: $mobile-width) {
+        padding: 20px 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__search {
+        @include font-bold-main;
+        margin: 0;
+
+        @media (max-width: $mobile-width) {
+            @include font-bold-mobile;
+            margin-right: 10px;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+
+        @media (max-width: $mobile-width) {
+            margin-left: 0px;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__sort {
+        margin: 0;
+
+        @media (max-width: $mobile-width) {
+            margin-right: 10px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: $mobile-width) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        margin-left: 30px;
+
+        @media (max-width: $mobile-width) {
+            margin-left: 0px;
+            margin-right: 10px;
+        }
+    }
+
+    &__link {
+        border: none;
+        border-bottom: 1px dotted #b3b3b3;
+        padding: 5px 0;
+        background-color: transparent;
+        text-transform: uppercase;
+        color: #b3b3b3;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &--active,
+        &:hover {
+            color: $main-color;
+            border-bottom: 1px dotted $main-color;
+        }
+    }
+
+    &__buttons {
+        margin-left: auto;
+
+        @media (max-width: $mobile-width) {
+            margin-left: 0px;
+            padding: 5px 0;
+        }
+    }
+
+    &__button {
+        padding: 4px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        
+
+        & path {
+            transition: 0.5s;
+        }
+
+        &:hover path,
+        &:focus path {
+            fill: #000000;
+        }
+
+        &:active path {
+            fill: $main-color;
+            transition: 0s;
+        }
+    }
+}
